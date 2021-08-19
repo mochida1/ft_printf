@@ -6,7 +6,7 @@
 /*   By: hmochida <hmochida@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 16:35:08 by hmochida          #+#    #+#             */
-/*   Updated: 2021/08/18 17:53:11 by hmochida         ###   ########.fr       */
+/*   Updated: 2021/08/18 21:22:19 by hmochida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,7 @@ size_t	burrito(const char *c, va_list ap)
 		i += 2 + pstr(ft_uitoa16(va_arg(ap, unsigned long long), 0));
 	}
 	else if (*c == '%')
-		i += pstr_freeless("%");
+		i += pchar(*c);
 	return (i);
 }
 

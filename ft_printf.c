@@ -6,7 +6,7 @@
 /*   By: hmochida <hmochida@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/27 15:10:13 by hmochida          #+#    #+#             */
-/*   Updated: 2021/08/18 05:00:05 by hmochida         ###   ########.fr       */
+/*   Updated: 2021/08/18 21:56:32 by hmochida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,15 +35,13 @@ while (*inp) // pega inp
 			ccount += burrito(inp + 1, ap);
 			inp += 2;
 		}
-		else
+	}
+	else
 		{
-		write (1, "%", 1);
+		pchar(*inp);
 		inp++;
 		ccount++;
 		}
-	}
-	ccount += pchar(*inp);
-	inp++;
 }
 
 // se %, checa %+1 se %, printa %
