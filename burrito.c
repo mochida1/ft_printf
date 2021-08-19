@@ -6,7 +6,7 @@
 /*   By: hmochida <hmochida@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/17 16:35:08 by hmochida          #+#    #+#             */
-/*   Updated: 2021/08/18 21:22:19 by hmochida         ###   ########.fr       */
+/*   Updated: 2021/08/18 23:23:55 by hmochida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,10 +39,10 @@ size_t	burrito(const char *c, va_list ap)
 	return (i);
 }
 
-size_t	chk_burrito (const char *c)
+size_t	chk_burrito(const char *c)
 {
-	if (*c == 'c' || *c == 's' || *c == 'p' || *c == 'd' || *c == 'i' || *c == 'u' ||
-	*c == 'x' || *c == 'X' || *c == '%')
+	if (*c == 'c' || *c == 's' || *c == 'p' || *c == 'd' || *c == 'i'
+		|| *c == 'u' || *c == 'x' || *c == 'X' || *c == '%')
 		return (1);
 	return (0);
 }

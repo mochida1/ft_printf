@@ -6,19 +6,19 @@
 /*   By: hmochida <hmochida@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/08/14 16:36:02 by hmochida          #+#    #+#             */
-/*   Updated: 2021/08/18 18:01:28 by hmochida         ###   ########.fr       */
+/*   Updated: 2021/08/18 23:34:01 by hmochida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "ft_printf.h"
 
 static size_t	gethexlen(unsigned long long ln);
-static char	*ascii_to_hex(char *ret, unsigned int caps);
+static char		*ascii_to_hex(char *ret, unsigned int caps);
 
 char	*ft_uitoa16(unsigned long long n, unsigned int caps)
 {
 	unsigned long long	ln;
-	char		*ret;
+	char				*ret;
 
 	ln = n;
 	if (!n)

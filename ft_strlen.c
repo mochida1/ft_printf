@@ -6,13 +6,13 @@
 /*   By: hmochida <hmochida@student.42sp.org.br>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/02/02 12:46:55 by hmochida          #+#    #+#             */
-/*   Updated: 2021/02/02 12:53:28 by hmochida         ###   ########.fr       */
+/*   Updated: 2021/08/18 23:32:10 by hmochida         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int		ft_strlen(const char *s)
+int	ft_strlen(const char *s)
 {
-	unsigned int i;
+	unsigned int	i;
 
 	i = 0;
 	while (s[i] != '\0')
